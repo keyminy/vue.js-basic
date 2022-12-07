@@ -58,60 +58,8 @@
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <h1>header</h1>
-    </header>
-    <nav>
-      <h2>nav</h2>
-      <ul>
-        <li><a href="#">메뉴1</a></li>
-        <li><a href="#">메뉴2</a></li>
-        <li><a href="#">메뉴3</a></li>
-        <li><a href="#">메뉴4</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section>
-        <book-component></book-component>
-        <book-component></book-component>
-        <book-component></book-component>
-        <book-component></book-component>
-        <!-- <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article>
-        <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article>
-        <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article>
-        <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article>
-        <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article> -->
-      </section>
-    </main>
-  </div>
-  <script>
-    const BookComponent = {
-      template: `
-        <article class="book">
-          <div class="book__subtitle">제목</div>
-          <div class="book__title">HTML 강좌</div>
-        </article>`,
-    };
-    const app = Vue.createApp({});
-    app.component('BookComponent', BookComponent);
-    app.mount("#app");
-  </script>
+  <div id="app"></div>
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
