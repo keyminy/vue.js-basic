@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<form action="" @submit="save(title, contents)">
+		<form action="" @submit.prevent="save(title, contents)">
 			<input type="text" v-model.lazy="title" placeholder="title" />
 			<textarea v-model.lazy="contents" placeholder="contents"></textarea>
 			<hr />
